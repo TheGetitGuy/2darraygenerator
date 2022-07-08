@@ -57,3 +57,8 @@ function generateList(){
   document.getElementById('codeResult').innerText = finaltext
   
   }
+function resetGrid(){ 
+  while (inputHolder.hasChildNodes()){
+    inputHolder.removeChild(inputHolder.firstChild)
+  }
+}
