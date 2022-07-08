@@ -6,28 +6,38 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  make a 2d array 
+  
+  <div id='headerHolder'>
+    <h1>Make a 2d Array</h1>
+  </div>
   
   <div class='countHolder'>
-    <input type='number' id='xcount' pattern="\d*" maxlength="3">,</div>
-  <div class='countHolder'>
-    <input type='number' id='ycount' pattern="\d*" maxlength="3"></div>
-      
-  <button id='submitSize' onclick="submitSize()">submit size</button>
-  
+    <input type='number' id='xcount' pattern="\d*" maxlength="3">,
+    <input type='number' id='ycount' pattern="\d*" maxlength="3">
+  </div>
+  <div id='buttons'>
+    <button id='submitSize' onclick="submitSize()">submit size</button>
+    <button id='reset' onclick="resetGrid()">Generate List</button>
+    <button id='generateList' onclick="generateList()">Generate List</button>
+  </div>
   <div id='result'>
-  <button id='generateList' onclick="generateList()">Generate List</button>
-  <div id='inputHolder'>
-  </div>
-  <div id='codeResult'></div>
     
-    
+    <div id='inputHolder'>
+    </div>
+    <div id='codeResult'>
+    </div>
+
+
   </div>
-  
+
 </body>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
 </html>

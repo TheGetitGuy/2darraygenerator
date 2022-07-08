@@ -1,7 +1,73 @@
+:root{
+  --purple: rgb(97,97,145);
+  --background: rgb(26,28,22);
+}
 html, body {
-  height: 100%;
-  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+  width: 100vw;
+  overflow-x:hidden;
+}
+body{
+  display: flex;
+  flex-flow:column;
+  align-items:center;
+  text-align:center;
+  width:100%;
+  height:100%;
+  background: var(--background);
+  color:var(--purple);
+}
+.countHolder > input{
+  width:4em;
+  
+  font-size: 1.5rem;
+}
+.countHolder {
+  width:100vw;
+  align-content: center;
+  margin: 2em auto;
+
+}
+
+#buttons {
+  flex-flow: row;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+button{
+  font-size: 1.5rem;
+  margin: 2rem;
+  
 }
 .inputarray{
-  max-width: 4em;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: center;
+  background: var(--background);
+  border-color:var(--purple);
+  color:var(--purple);
+}
+#result{
+  width : 90vw;
+  font-size: 1rem;
+
+}
+#inputHolder{ 
+  border-radius: 10px;
+  white-space: nowrap ;
+  overflow-x: auto;
+  font-family: 'Roboto Mono', monospace;
+  
+}
+#inputHolder > input{
+  width:2rem;
+  font-size: 1.2rem;
+}
+#codeResult{ 
+  margin: 2em auto;
+  text-align: center;
+  word-wrap:break-word;
+}
+#headerHolder{
+  width:90%;
 }
