@@ -6,7 +6,11 @@ function submitSize(){
   xSize = document.getElementById('xcount').value
   ySize = document.getElementById('ycount').value //get array input
   mapName = document.getElementById('name').value
-  generateArray()
+  if (xSize<=0 || ySize<=0 || mapName == ''){
+    alert('Invalid Inputs')
+  } else{
+    generateArray()
+  }
 }
 function generateArray(){
   //Making the array of input fields
@@ -61,6 +65,10 @@ function generateList(){
   
   }
 function resetGrid(){ 
+  let ans = window.confirm( `It's okay to clear this?`)
+  if (ans != true){
+    return
+  }
   while (inputHolder.hasChildNodes()){
     inputHolder.removeChild(inputHolder.firstChild)
   }
