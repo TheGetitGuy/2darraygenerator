@@ -1,5 +1,10 @@
-Hosted at https://www.pyligen.com
 
+www.PyLiGen.com
+
+Made by www.TheGetitguy.com
+
+# 2darraygenerator
+ main
 A small web tool for generating a 2d array
 # 2darraygenerator
 This tool's purpose is to help me visualize and manage 2d arrays for other projects.
