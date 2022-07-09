@@ -14,11 +14,15 @@ function submitSize(){
 }
 function generateArray(){
   //Making the array of input fields
-  
+  if (xSize > 80 || ySize > 80){
+    if (window.confirm("Woah Buddy, that's a bigg ass number. Are you sure?") == false){
+      return
+    }
+  }
   for (let i = 0; i < xSize;i++){
     for (let j = 0; j < ySize;j++){
       const emptyField = document.createElement('input')
-      emptyField.innerHTML = ('0')
+     // emptyField.innerHTML = ('0')
       emptyField.type = 'text'
       emptyField.className = 'inputarray'
       emptyField.maxLength = 2
