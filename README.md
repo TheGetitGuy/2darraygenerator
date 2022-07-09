@@ -4,7 +4,7 @@ www.PyLiGen.com
 Made by www.TheGetitguy.com
 
 # 2darraygenerator
-98q 111
+
 A small web tool for generating a 2d array
 
 This tool's purpose is to help me visualize and manage 2d arrays for other projects.
