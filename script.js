@@ -39,9 +39,11 @@ function generateArray(){
 function generateList(){
   // build an array, then combine it into a group of arrays, then finish 
   // to a string
+  
   let currentArray = []
   let combinedArray = [] 
   let finaltext
+  
   let elements = inputHolder.children 
     for(let i = 0; i < elements.length;i++){
       console.log(elements[i].nodeName)
@@ -66,6 +68,7 @@ function generateList(){
   //print to results
   finaltext = `'${mapName}': ` + finaltext 
   document.getElementById('codeResult').innerText = finaltext
+  document.getElementById('codeResult').scrollIntoView({behavior: 'smooth'}) //After Generating smooth scroll to array
   
   }
 function resetGrid(){ 
