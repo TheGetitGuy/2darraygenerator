@@ -24,9 +24,12 @@
     <input type='number' id='ycount' pattern="\d*" maxlength="3">
   </div>
   <div id='buttons'>
-    <button id='submitSize' onclick="submitSize()">Submit size</button>
-    <button id='reset' onclick="resetGrid()">Clear grid</button> 
-    <button id='generateList' onclick="generateList()">Generate List</button>
+    <button id='submitSize' onclick="submitSize()"><div class='insidebutton'>Submit size</div><img style="height:1.5em;" src='/Icons/icons8-submit-document-48.png'</button>
+    
+    <button id='reset' onclick="resetGrid()"><div class='insidebutton'>Clear grid</div><img style="height:1.5em;" src='/Icons/icons8-clear-32.png'></button> 
+    
+    <button id='generateList' onclick="generateList()"><div class='insidebutton'>Generate List</div><img style='height:1.5em' src='Icons/icons8-python-50.png'></button>
+    
   </div>
   <div id='result'>
     
@@ -37,6 +40,8 @@
 
 
   </div>
+  
+  <p> icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
 
 </body>
 

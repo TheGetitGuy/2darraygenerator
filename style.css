@@ -12,7 +12,7 @@ body{
   flex-flow:column;
   align-items:center;
   text-align:center;
-  width:100%;
+  width:100vw;
   height:100%;
   background: var(--background);
   color:var(--purple);
@@ -51,9 +51,9 @@ body{
   justify-content: space-between;
   margin: 2rem 5px;
 }
-button{
+button{ 
   background: rgb(144,141,187);
-background: linear-gradient(90deg, rgba(144,141,187,0.5) 0%, rgba(165,225,228,0.2) 35%, rgba(187,208,213,0.2) 1003%);
+  background: linear-gradient(90deg, rgba(144,141,187,0.5) 0%, rgba(165,225,228,0.2) 35%, rgba(187,208,213,0.2) 1003%);
   color:var(--purple);
   border-top-style:hidden;
   border-left-style:hidden;
@@ -61,7 +61,7 @@ background: linear-gradient(90deg, rgba(144,141,187,0.5) 0%, rgba(165,225,228,0.
   border-bottom-style: solid;    
   border-width: 4px;
   border-radius: 10px;
-  flex: 1;
+  flex: 1 1 auto;
   padding: 0.5em;
   margin: 0 10px;
   font-size: 1.5rem;
@@ -70,6 +70,28 @@ background: linear-gradient(90deg, rgba(144,141,187,0.5) 0%, rgba(165,225,228,0.
 }
 button:hover{
   transform: scale(1.2);
+}
+button:active{
+  transform: scale(0.8);
+}
+
+button > img{
+  transition: transform 0.2s ease-out;
+}
+button:hover > img{
+  transform: scale(1.2);
+}
+
+
+
+#submitSize{
+  align-items: center;
+  display: flex; 
+}
+#reset{
+  align-items: center;
+  display: flex; 
+  
 }
 .inputarray{
   font-family: 'Roboto Mono', monospace;
@@ -99,6 +121,7 @@ button:hover{
   word-wrap:break-word;
 }
 #headerHolder{
+  text-align: center;
   width:90%;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
