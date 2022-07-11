@@ -22,7 +22,7 @@ function generateArray(){
   for (let i = 0; i < xSize;i++){
     for (let j = 0; j < ySize;j++){
       const emptyField = document.createElement('input')
-     // emptyField.innerHTML = ('0')
+      // emptyField.innerHTML = ('0')
       emptyField.type = 'text'
       emptyField.className = 'inputarray'
       emptyField.maxLength = 2
@@ -34,7 +34,18 @@ function generateArray(){
     }
     inputHolder.append(document.createElement('br'))
   }
+  for (let x of inputHolder.childNodes){
+  x.addEventListener('change',(event)=>{
+    if (event.target.value != 0){
+    event.target.classList.add('greyBg')
+    }
+    if (event.target.value == 0){
+      event.target.classList.remove('greyBg')
+    }
+  })
 }
+  }
+
 
 function generateList(){
   // build an array, then combine it into a group of arrays, then finish 
