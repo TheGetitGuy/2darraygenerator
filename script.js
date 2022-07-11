@@ -2,7 +2,10 @@ let inputHolder = document.getElementById('inputHolder')
 let xSize 
 let ySize
 let mapName
+
+
 function submitSize(){
+  // Taking the input boxes and then galling Generate array
   xSize = document.getElementById('xcount').value
   ySize = document.getElementById('ycount').value //get array input
   mapName = document.getElementById('name').value
@@ -14,6 +17,7 @@ function submitSize(){
 }
 function generateArray(){
   //Making the array of input fields
+  //And adding EvenListeners 
   if (xSize > 80 || ySize > 80){
     if (window.confirm("Woah Buddy, that's a bigg ass number. Are you sure?") == false){
       return
@@ -22,7 +26,6 @@ function generateArray(){
   for (let i = 0; i < xSize;i++){
     for (let j = 0; j < ySize;j++){
       const emptyField = document.createElement('input')
-      // emptyField.innerHTML = ('0')
       emptyField.type = 'text'
       emptyField.className = 'inputarray'
       emptyField.maxLength = 2
@@ -34,6 +37,8 @@ function generateArray(){
     }
     inputHolder.append(document.createElement('br'))
   }
+
+  // Changing the color if the box isnt = to 0 by adding a class
   for (let x of inputHolder.childNodes){
   x.addEventListener('change',(event)=>{
     if (event.target.value != 0){
